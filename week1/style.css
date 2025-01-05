@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -17,7 +16,7 @@ body {
     --isabelline: #f1f0eaff;
 }
 
-/* Header Styles */
+
 header {
     background-color: var(--onyx);
     color: var(--isabelline);
@@ -45,7 +44,7 @@ header nav a:hover {
     color: var(--bone);
 }
 
-/* Main Content */
+
 main {
     max-width: 800px;
     margin: 2rem auto;
@@ -70,7 +69,7 @@ main p {
     color: var(--isabelline);
 }
 
-/* Footer Styles */
+
 footer {
     text-align: center;
     background: var(--onyx);
@@ -81,7 +80,7 @@ footer {
     border-top: 2px solid var(--bone);
 }
 
-/* Links */
+
 a {
     color: var(--isabelline);
     text-decoration: none;
@@ -93,7 +92,7 @@ a:hover {
     color: var(--bone);
 }
 
-/* Lists */
+
 ul {
     padding: 0;
     list-style: none;
@@ -109,7 +108,7 @@ ul li {
     text-align: center;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     body {
         font-size: 0.9rem;
@@ -124,8 +123,8 @@ ul li {
     }
 }
 #blog-posts ul li a {
-    background: var(--onyx); /* Darker background */
-    color: var(--isabelline); /* Light text for contrast */
+    background: var(--onyx);
+    color: var(--isabelline); 
     padding: 0.5rem 1rem;
     border-radius: 8px;
     text-decoration: none;
@@ -135,6 +134,6 @@ ul li {
 }
 
 #blog-posts ul li a:hover {
-    background: var(--bone); /* Slightly lighter color for hover effect */
-    color: var(--raisin-black); /* Darker text color on hover */
+    background: var(--bone); 
+    color: var(--raisin-black); 
 }
