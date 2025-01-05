@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--raisin-black);
+    color: var(--bone);
+}
+
+/* CSS Variables for Colors */
+:root {
+    --onyx: #474448ff;
+    --raisin-black: #2d232eff;
+    --bone: #e0ddcfff;
+    --wenge: #534b52ff;
+    --isabelline: #f1f0eaff;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--onyx);
+    color: var(--isabelline);
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 2px solid var(--bone);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header nav a {
+    color: var(--isabelline);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: var(--bone);
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: var(--wenge);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+main h2 {
+    color: var(--isabelline);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--bone);
+    padding-bottom: 0.5rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--isabelline);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: var(--onyx);
+    color: var(--isabelline);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 2px solid var(--bone);
+}
+
+/* Links */
+a {
+    color: var(--isabelline);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--bone);
+}
+
+/* Lists */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 0.5rem 0;
+  
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: var(--raisin-black);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+#blog-posts ul li a {
+    background: var(--onyx); /* Darker background */
+    color: var(--isabelline); /* Light text for contrast */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+#blog-posts ul li a:hover {
+    background: var(--bone); /* Slightly lighter color for hover effect */
+    color: var(--raisin-black); /* Darker text color on hover */
+}
