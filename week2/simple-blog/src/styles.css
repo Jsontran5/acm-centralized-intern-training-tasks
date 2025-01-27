@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--isabelline);
+    margin: 0;
+    padding: 0;
+    --onyx: #474448ff;
+    --raisin-black: #2d232eff;
+    --bone: #e0ddcfff;
+    --wenge: #534b52ff;
+    --isabelline: #f1f0eaff;
+}
+
+/* App container */
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--isabelline);
+}
+
+/* Blog styles */
+.blog-container {
+    background: var(--bone);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: var(--raisin-black);
+}
+
+.blog-title {
+    font-size: 2rem;
+    color: var(--onyx);
+    margin-bottom: 20px;
+}
+
+/* New Post Input */
+.new-post-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.new-post-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--wenge);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: var(--isabelline);
+    color: var(--raisin-black);
+}
+
+.add-post-button {
+    padding: 10px 15px;
+    background-color: var(--onyx);
+    color: var(--isabelline);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-post-button:hover {
+    background-color: var(--raisin-black);
+}
+
+/* Post styles */
+.post-card {
+    background: var(--bone);
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    text-align: left;
+    color: var(--raisin-black);
+}
+
+.post-title {
+    font-size: 1.5rem;
+    color: var(--onyx);
+    margin-bottom: 10px;
+}
+
+.post-likes {
+    font-size: 1rem;
+    color: var(--wenge);
+    margin-bottom: 10px;
+}
+
+.like-button {
+    padding: 8px 12px;
+    background-color: var(--raisin-black);
+    color: var(--isabelline);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.like-button:hover {
+    background-color: var(--onyx);
+}
+
+/* When no Post */
+.no-posts {
+    color: var(--wenge);
+    font-style: italic;
+}
